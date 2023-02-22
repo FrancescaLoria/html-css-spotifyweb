@@ -41,7 +41,6 @@ main {
 }
 
 .navbar {
-    width: calc( 100% - 200px);
     height: 30px;
     background-color: aqua;
 }
@@ -53,6 +52,38 @@ footer {
     position: relative;
     top: 100%;
 }
+
+/* [ R E S P O N S I V E] */
+
+/* SPOTIFY MD */
+@media screen and (max-width: 1100px) {
+    
+}
+/* /SPOTIFY MD */
+
+/* SPOTIFY S */
+@media screen and (max-width: 700px) {
+    
+}
+/* /SPOTIFY S */
+
+/* SPOTIFY XS */
+@media screen and (max-width: 600px) {
+
+    .left-sidebar {
+        width: 70px;
+    }
+
+    header {
+        width: calc( 100% - 70px);
+    }
+
+    main {
+        width: calc( 100% - 70px)
+    }
+}
+/* SPOTIFY XS */
+
 
 
 
