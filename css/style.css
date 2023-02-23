@@ -198,6 +198,15 @@ main {
     line-height: 30px;
 }
 
+.navbar ul li:first-child::after{
+    content: "";
+    width: 40%;
+    margin: auto;
+    display: block;
+    height: 3px;
+    background: green;
+}
+
 .row {
     display: flex;
     flex-wrap: wrap;
@@ -241,20 +250,17 @@ footer {
 footer .cont-left {
     height: 80px;
     width: 20%;
-    border: 2px solid red;
     display: flex;
 }
 
 footer .cont-center {
     height: 80px;
     width: 60%;
-    border: 2px solid red;
 }
 
 footer .cont-right {
     height: 80px;
-    width: 20%;
-    border: 2px solid red;
+    min-width: 20%;
     display: flex;
     align-items: center;
     gap: 16px;
@@ -270,7 +276,6 @@ footer .cont-right {
 
 footer .flex {
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
 }
 
@@ -293,7 +298,9 @@ footer .icon-left {
 }
 
 footer .end {
-    margin-left: 40px;
+    flex-wrap: wrap;
+    margin: auto 0 auto auto;
+    height: 60%;
 }
 
 footer ul {
@@ -339,7 +346,7 @@ footer .icon-right {
 }
 
 footer .play-bar-right {
-    width: 190px;
+    width: 160px;
     height: 6px;
     border-radius: 15px;
     background-color: #A3A3A3;
@@ -361,6 +368,10 @@ footer .current-time-right {
     
     .box {
         width: calc( 100% / 4 - 20px);
+    }
+
+    footer .end {
+        margin: auto 10px;
     }
 }
 /* /SPOTIFY MD */
